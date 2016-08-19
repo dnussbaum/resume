@@ -1,10 +1,11 @@
-rm Daniel\ Nussbaum\ Resume.pdf
-rm daniel-nussbaum-resume.pdf
+# Remove old files
+rm *.pdf
+
+# Generate PDFs
 cd src
 xelatex resume.tex resume.pdf
-rm resume.out
-rm resume.log
-rm resume.aux
 mv resume.pdf ../Daniel\ Nussbaum\ Resume.pdf
 cd ..
+
+# Make a copy with dashes instead of spaces
 cp Daniel\ Nussbaum\ Resume.pdf daniel-nussbaum-resume.pdf
